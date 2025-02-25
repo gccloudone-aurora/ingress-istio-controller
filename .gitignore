@@ -1,7 +1,16 @@
+# Dependency directories (remove the comment below to include it)
 vendor
-ingress-istio-controller
-.DS_Store
-.vscode
-__debug_bin
-bin/
-_out/
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.txt
+*.out
+!NOTES.txt
+
+# Binaries for programs and plugins
+./ingress-istio-controller
+
+# env
+.env
