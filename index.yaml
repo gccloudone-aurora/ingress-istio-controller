@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  ingress-istio-controller:
+  - apiVersion: v2
+    appVersion: 1.4.0
+    created: "2025-02-26T02:07:08.306250375Z"
+    description: An Ingress controller for Istio which converts Kubernetes Ingresses
+      into VirtualServices.
+    digest: bc6869f5f4106830191c332cdebcf2852ff5f8a842d25d3de260b3d0678d0b37
+    name: ingress-istio-controller
+    type: application
+    urls:
+    - https://github.com/gccloudone-aurora/ingress-istio-controller/releases/download/ingress-istio-controller-0.0.1/ingress-istio-controller-0.0.1.tgz
+    version: 0.0.1
+generated: "2025-02-26T02:07:08.306259863Z"
