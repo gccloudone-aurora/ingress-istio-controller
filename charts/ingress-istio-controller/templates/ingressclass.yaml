@@ -9,6 +9,6 @@ metadata:
   labels:
     {{- include "ingress-istio-controller.labels" . | nindent 4 }}
 spec:
-  controller: ingress.statcan.gc.ca/ingress-istio-controller
+  controller: ingress.ssc-spc.gc.ca/ingress-istio-controller
 {{- end }}
 {{- end }}
