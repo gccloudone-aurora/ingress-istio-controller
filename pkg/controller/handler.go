@@ -229,7 +229,7 @@ func (c *Controller) getNonHTTPPRedirectPortsOnGateways(gateways []*istionetwork
 
 	for _, gateway := range gateways {
 		for _, server := range gateway.Spec.Servers {
-			if !server.Tls.HttpsRedirect {
+			if server.Tls == nil || !server.Tls.HttpsRedirect {
 				ports = append(ports, server.Port.Number)
 			}
 		}
