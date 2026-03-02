@@ -1,5 +1,5 @@
 # Build with the golang image
-FROM golang:1.18-alpine AS build
+FROM golang:1.26-alpine3.23 AS build
 
 # Add git
 RUN apk add git
