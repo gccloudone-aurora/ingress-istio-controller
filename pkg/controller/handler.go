@@ -68,7 +68,7 @@ func (c *Controller) handleVirtualServiceForIngress(ingress *networkingv1.Ingres
 	if !hasIngressClassAnnotation && ingress.Spec.IngressClassName != nil {
 		ingressClass, err := c.ingressClassesLister.Get(*ingress.Spec.IngressClassName)
 		if err != nil {
-			klog.Error("error getting IngressClass %q", *ingress.Spec.IngressClassName)
+			klog.Errorf("error getting IngressClass %q", *ingress.Spec.IngressClassName)
 			return nil, err
 		}
 
